@@ -10,7 +10,7 @@ Flavio Luiz Vicco - RM 361664
 
 # Hackaton – Threat Modeling automático (YOLO + Gemini + STRIDE) 🚀
 
-> **Objetivo:** transformar uma **imagem de diagrama de arquitetura** (AWS/Azure) em:
+> **Objetivo:** transformar uma **imagem de diagrama de arquitetura** (AWS/Azure/Google) em:
 > - ✅ **Componentes estruturados (JSON)**
 > - ✅ **Relatório STRIDE completo**
 > - ✅ **PDF pronto para entrega**
@@ -22,7 +22,7 @@ Flavio Luiz Vicco - RM 361664
 
 ### 🖼️ 1) Você envia uma imagem do diagrama
 - Formatos: **PNG/JPG**
-- Ex.: diagramas de arquitetura cloud com ícones (AWS/Azure)
+- Ex.: diagramas de arquitetura cloud com ícones (AWS/Azure/Google)
 
 ### 🎯 2) O YOLO detecta os ícones
 - Retorna: **classe**, **confiança**, **bbox** (x1,y1,x2,y2)
@@ -47,7 +47,7 @@ Flavio Luiz Vicco - RM 361664
 
 ## 🧩 Modos disponíveis
 
-### ✅ Modo A — `app_gemini_v2_fixed.py` (fallback CLIP opcional)
+### ✅ Utilização — `app.py` (fallback CLIP opcional)
 - Pipeline:
   - YOLO ✅
   - OCR Azure (opcional) ✅
@@ -55,17 +55,6 @@ Flavio Luiz Vicco - RM 361664
   - Gemini JSON ✅
   - Gemini STRIDE ✅
   - PDF ✅
-
-### ✅ Modo B — `app_gemini_native_embeddings_v2_fixed.py` (recomendado)
-- Pipeline:
-  - YOLO ✅
-  - OCR Azure (opcional) ✅
-  - Fallback **nativo** (Gemini Vision → label → embedding de texto `gemini-embedding-001`) ✅
-  - Gemini JSON ✅
-  - Gemini STRIDE ✅
-  - PDF ✅
-
-> **Recomendação:** use o **Modo B** (menos dependências pesadas e mais simples para Windows).
 
 ---
 
@@ -87,7 +76,7 @@ Arquivo: `ui_streamlit.py`
 Hackaton/
   ui_streamlit.py
   app_gemini_native_embeddings_v2_fixed.py
-  app_gemini_v2_fixed.py
+  app.py
   icons/
     aws_s3.png
     aws_lambda.png
@@ -152,7 +141,7 @@ pip install streamlit
 pip install azure-cognitiveservices-vision-computervision msrest
 ```
 
-### 5) (Opcional) Fallback CLIP (Modo A)
+### 5) (Opcional) Fallback CLIP
 ```bash
 pip install torch open_clip_torch pillow
 ```
@@ -200,13 +189,6 @@ Depois:
 3. Baixe o PDF e o JSON
 
 ### ✅ Opção 2: Rodar via script (sem UI)
-
-**Modo B (recomendado):**
-```bash
-python app_gemini_native_embeddings_v2_fixed.py
-```
-
-**Modo A (CLIP opcional):**
 ```bash
 python app_gemini_v2_fixed.py
 ```
@@ -227,16 +209,6 @@ python app_gemini_v2_fixed.py
 
 ### 🎯 Problema
 Ícones muito parecidos (ou baixa resolução) podem gerar **baixa confiança** no YOLO.
-
-### ✅ Solução (Modo B)
-Para `conf < CONF_FALLBACK`:
-1. **Gemini Vision** sugere um `label` para o recorte do ícone
-2. Geramos embedding do `label` com `gemini-embedding-001`
-3. Fazemos o matching com os embeddings dos nomes de arquivos em `icons/`
-
-📌 Isso melhora robustez **sem torch**.
-
----
 
 ## 🧩 Ícones (como montar a pasta `icons/`) 🧷
 
@@ -318,13 +290,8 @@ Use as versões **_fixed.py** (já corrigidas para `types.Part.from_text(text=..
 ---
 
 ## 👥 Créditos e licença
-- Ícones e marcas AWS/Azure pertencem aos respectivos owners.
+- Ícones e marcas AWS/Azure/Google pertencem aos respectivos owners.
 - Use conforme termos oficiais dos providers.
 
 ---
 
-## 📌 Próximas evoluções (roadmap)
-- 🔧 “JSON repair” automático se o Gemini devolver JSON inválido
-- 🧠 Cache de resultados por imagem (hash) para reduzir custo
-- 🌐 API FastAPI para integração (CI/CD / DevSecOps)
-- 📊 Export para Excel/CSV e anexos de evidências
