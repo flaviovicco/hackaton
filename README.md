@@ -1,4 +1,4 @@
-# Hackaton - 5IADT
+  # Hackaton - 5IADT
 Hackaton - Fase 5: Pos Tech em IA para Devs da FIAP, 2025.
 Um dos desafios é utilizar a Inteligência Artificial para realizar automaticamente
 a modelagem de ameaças, baseado na metodologia STRIDE de um sistema a partir
@@ -181,7 +181,8 @@ MAX_FALLBACKS=25
 ### ✅ Opção 1: Rodar via Streamlit (recomendado)
 ```bash id="d2vwkj"
 streamlit run ui_streamlit.py
-![streamlit](https://github.com/user-attachments/assets/f8e128ef-baa7-4628-b8be-2dbc798783da)
+<img width="639" height="336" alt="streamlit" src="https://github.com/user-attachments/assets/d8e54a9c-84c3-4db1-b4c1-9b2f8cd9f2d4" />
+
 ```
 
 Depois:
