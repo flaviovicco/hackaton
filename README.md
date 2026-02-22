@@ -181,8 +181,8 @@ MAX_FALLBACKS=25
 ### ✅ Opção 1: Rodar via Streamlit (recomendado)
 ```bash id="d2vwkj"
 streamlit run ui_streamlit.py
-![streamlit](https://github.com/user-attachments/assets/d8e54a9c-84c3-4db1-b4c1)
 ```
+![streamlit](https://github.com/user-attachments/assets/d8e54a9c-84c3-4db1-b4c1)
 
 Depois:
 1. Faça upload da imagem
