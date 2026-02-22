@@ -181,6 +181,9 @@ MAX_FALLBACKS=25
 ### ✅ Opção 1: Rodar via Streamlit (recomendado)
 ```bash id="d2vwkj"
 streamlit run ui_streamlit.py
+<img width="958" height="505" alt="image" src="https://github.com/user-attachments/assets/a235da0a-131b-4465-b108-7c02024106d0" />
+<img width="958" height="505" alt="image" src="https://github.com/user-attachments/assets/a235da0a-131b-4465-b108-7c02024106d0" />
+
 ```
 
 Depois:
@@ -190,7 +193,7 @@ Depois:
 
 ### ✅ Opção 2: Rodar via script (sem UI)
 ```bash
-python app_gemini_v2_fixed.py
+python app.py
 ```
 
 ---
