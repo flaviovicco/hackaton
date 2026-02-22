@@ -182,7 +182,6 @@ MAX_FALLBACKS=25
 ```bash id="d2vwkj"
 streamlit run ui_streamlit.py
 ```
-
 <img width="639" height="336" alt="streamlit" src="https://github.com/user-attachments/assets/dfbdbec2-dc2a-4f2f-9592-c09c66ab0f8a" />
 
 Depois:
@@ -206,6 +205,7 @@ python app.py
 | `components.json` | (na UI) JSON dos componentes para integração |
 
 ---
+<img width="453" height="320" alt="relatorio_stride" src="https://github.com/user-attachments/assets/38bb3fe3-0ed7-4e19-9814-53668badf108" />
 
 ## 🧠 Como funciona o fallback (e por que isso importa)
 
