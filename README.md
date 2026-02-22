@@ -181,7 +181,8 @@ MAX_FALLBACKS=25
 ### ✅ Opção 1: Rodar via Streamlit (recomendado)
 ```bash id="d2vwkj"
 streamlit run ui_streamlit.py
-![streamlit](https://github.com/user-attachments/assets/b978bf7b-5480-4493-8788-34152e5a142f)
+<img width="1277" height="672" alt="image" src="https://github.com/user-attachments/assets/3c5aaa2c-48a6-4789-9676-f0574361b0ad" />
+
 ```
 
 Depois:
