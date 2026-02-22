@@ -182,7 +182,8 @@ MAX_FALLBACKS=25
 ```bash id="d2vwkj"
 streamlit run ui_streamlit.py
 ```
-![streamlit](https://github.com/user-attachments/assets/d8e54a9c-84c3-4db1-b4c1)
+
+<img width="639" height="336" alt="streamlit" src="https://github.com/user-attachments/assets/dfbdbec2-dc2a-4f2f-9592-c09c66ab0f8a" />
 
 Depois:
 1. Faça upload da imagem
