@@ -1,0 +1,44 @@
+path: output
+train: images/train
+val: images/val
+test: images/test
+nc: 38
+names:
+  0: aws_backup
+  1: aws_cloudfront
+  2: aws_cloudtrail
+  3: aws_cloudwatch
+  4: aws_elastic_file_system
+  5: aws_elasticache
+  6: aws_key_management_service
+  7: aws_rds
+  8: aws_shield
+  9: aws_simple_email_service
+  10: aws_solutions_engineer_intern
+  11: aws_waf
+  12: azure
+  13: azure_api_gateway
+  14: azure_cloud_services
+  15: azure_developer_portal
+  16: azure_entra_connect
+  17: azure_entra_domain_services
+  18: azure_entra_global_secure_access
+  19: azure_entra_internet_access
+  20: azure_entra_managed_identities
+  21: azure_entra_private_access
+  22: azure_entra_privleged_identity_management
+  23: azure_logic_apps
+  24: azure_users
+  25: google_advanced_solutions_lab
+  26: google_beyondcorp
+  27: google_bigquery
+  28: google_cloud_endpoints
+  29: google_cloud_gpu
+  30: google_cloud_logging
+  31: google_cloud_natural_language_api
+  32: google_dataprep
+  33: google_identity_and_access_management
+  34: google_identity_aware_proxy
+  35: google_kubernetes_engine
+  36: google_speech_to_text
+  37: google_stackdriver
