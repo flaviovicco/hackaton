@@ -74,9 +74,9 @@ Arquivo: `ui_streamlit.py`
 
 ```
 Hackaton/
-  ui_streamlit.py
-  app_gemini_native_embeddings_v2_fixed.py
   app.py
+  ui_streamlit.py
+  generate_synthetic_diagrams.py
   icons/
     aws_s3.png
     aws_lambda.png
@@ -181,9 +181,7 @@ MAX_FALLBACKS=25
 ### ✅ Opção 1: Rodar via Streamlit (recomendado)
 ```bash id="d2vwkj"
 streamlit run ui_streamlit.py
-<img width="958" height="505" alt="image" src="https://github.com/user-attachments/assets/a235da0a-131b-4465-b108-7c02024106d0" />
-<img width="958" height="505" alt="image" src="https://github.com/user-attachments/assets/a235da0a-131b-4465-b108-7c02024106d0" />
-
+![streamlit](https://github.com/user-attachments/assets/b978bf7b-5480-4493-8788-34152e5a142f)
 ```
 
 Depois:
