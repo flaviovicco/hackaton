@@ -8,6 +8,8 @@ detecção supervisionada de ameaças.
 
 Flavio Luiz Vicco - RM 361664
 
+https://youtu.be/6YbMQ2dw1iw
+
 # Hackaton – Modelagem de Ameaças (YOLO + Gemini + STRIDE) 🚀
 
 > **Objetivo:** transformar uma **imagem de diagrama de arquitetura** (AWS/Azure/Google) em:
