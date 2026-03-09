@@ -1,4 +1,4 @@
-  # Hackathn - 5IADT
+  # Hackaton - 5IADT
 Hackaton - Fase 5: Pos Tech em IA para Devs da FIAP, 2025.
 Um dos desafios é utilizar a Inteligência Artificial para realizar automaticamente
 a modelagem de ameaças, baseado na metodologia STRIDE de um sistema a partir
