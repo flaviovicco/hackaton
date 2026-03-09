@@ -1,5 +1,5 @@
-  # Hackaton - 5IADT
-Hackaton - Fase 5: Pos Tech em IA para Devs da FIAP, 2025.
+  # Hackathon - 5IADT
+Hackathon - Fase 5: Pos Tech em IA para Devs da FIAP, 2025.
 Um dos desafios é utilizar a Inteligência Artificial para realizar automaticamente
 a modelagem de ameaças, baseado na metodologia STRIDE de um sistema a partir
 de um diagrama de arquitetura de software em imagem. A empresa tem o objetivo de
@@ -10,7 +10,7 @@ Flavio Luiz Vicco - RM 361664
 
 https://youtu.be/6YbMQ2dw1iw
 
-# Hackaton – Modelagem de Ameaças (YOLO + Gemini + STRIDE) 🚀
+# Hackathon – Modelagem de Ameaças (YOLO + Gemini + STRIDE) 🚀
 
 > **Objetivo:** transformar uma **imagem de diagrama de arquitetura** (AWS/Azure/Google) em:
 > - ✅ **Componentes estruturados (JSON)**
