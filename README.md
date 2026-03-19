@@ -236,10 +236,9 @@ python app.py
   https://learn.microsoft.com/azure/architecture/icons/
 
 #### Outras alternativas
-- Selecioar os icones necessários:
-  https://aws-icons.com/
-  https://az-icons.com/
-  https://gcpicons.com/
+- https://aws-icons.com/
+- https://az-icons.com/
+- https://gcpicons.com/
 
 > Se os pacotes vierem em **SVG**, converta para **PNG** (256×256 ou 512×512).
 
