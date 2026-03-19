@@ -236,6 +236,7 @@ python app.py
   https://learn.microsoft.com/azure/architecture/icons/
 
 #### Outras alternativas
+- Selecioar os icones necessários:
   https://aws-icons.com/
   https://az-icons.com/
   https://gcpicons.com/
